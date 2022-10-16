@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.7.2 on win32)" generated="20221016 22:30:51.663" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.7.2 on win32)" generated="20221017 00:29:28.934" rpa="false" schemaversion="3">
 <suite id="s1" name="RobotFrameworkAPITest" source="C:\Users\EDA\PycharmProjects\RobotFrameworkAPI\tests\test\RobotFrameworkAPITest.robot">
 <test id="s1-t1" name="Creat Board" line="15">
 <kw name="Set Variable" library="BuiltIn">
 <var>${name}</var>
 <arg>test</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221016 22:30:52.386" level="INFO">${name} = test</msg>
-<status status="PASS" starttime="20221016 22:30:52.385" endtime="20221016 22:30:52.386"/>
+<msg timestamp="20221017 00:29:29.777" level="INFO">${name} = test</msg>
+<status status="PASS" starttime="20221017 00:29:29.777" endtime="20221017 00:29:29.778"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${request_body}</var>
@@ -15,8 +15,8 @@
 <arg>key=${key}</arg>
 <arg>token=${token}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221016 22:30:52.389" level="INFO">${request_body} = {'name': 'test', 'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
-<status status="PASS" starttime="20221016 22:30:52.387" endtime="20221016 22:30:52.389"/>
+<msg timestamp="20221017 00:29:29.781" level="INFO">${request_body} = {'name': 'test', 'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
+<status status="PASS" starttime="20221017 00:29:29.778" endtime="20221017 00:29:29.781"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -24,42 +24,42 @@
 <arg>json=${request_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221016 22:30:53.614" level="INFO">POST Request : url=https://api.trello.com/1/boards/?name=test&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:30.497" level="INFO">POST Request : url=https://api.trello.com/1/boards/?name=test&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  path_url=/1/boards/?name=test&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '136', 'Content-Type': 'application/json'} 
  body=b'{"name": "test", "key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
  </msg>
-<msg timestamp="20221016 22:30:53.614" level="INFO">POST Response : url=https://api.trello.com/1/boards/?name=test&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:30.498" level="INFO">POST Response : url=https://api.trello.com/1/boards/?name=test&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  status=200, reason=OK 
- headers={'Date': 'Sun, 16 Oct 2022 19:30:38 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1719', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '99', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '299', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '374', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665948638331', 'X-Trello-Api-Org-Selected': 'true', 'X-Envoy-Upstream-Service-Time': '405', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': 'd82c6088ab2a6205', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
- body={"id":"634c5bde19576c04dd8e2df5","name":"test","desc":"","descData":null,"closed":false,"idOrganization":"6146fc9521ede74ca314a55a","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/Qb76lUNo/test","shortUrl":"https://trello.com/b/Qb76lUNo","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"hiddenPluginBoardButtons":[],"switcherViews":[{"_id":"634c5bde19576c04dd8e2df6","viewType":"Board","enabled":true},{"_id":"634c5bde19576c04dd8e2df7","viewType":"Table","enabled":true},{"_id":"634c5bde19576c04dd8e2df8","viewType":"Calendar","enabled":false},{"_id":"634c5bde19576c04dd8e2df9","viewType":"Dashboard","enabled":false},{"_id":"634c5bde19576c04dd8e2dfa","viewType":"Timeline","enabled":false},{"_id":"634c5bde19576c04dd8e2dfb","viewType":"Map","enabled":false}],"background":"blue","backgroundColor":"#0079BF","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":"","green_dark":"","yellow_dark":"","orange_dark":"","red_dark":"","purple_dark":"","blue_dark":"","sky_dark":"","lime_dark":"","pink_dark":"","black_dark":"","green_light":"","yellow_light":"","orange_light":"","red_light":"","purple_light":"","blue_light":"","sky_light":"","lime_light":"","pink_light":"","black_light":""},"limits":{}} 
+ headers={'Date': 'Sun, 16 Oct 2022 21:29:14 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1719', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '99', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '299', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '374', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665955754445', 'X-Trello-Api-Org-Selected': 'true', 'X-Envoy-Upstream-Service-Time': '316', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '8a55a8a94a16cc63', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
+ body={"id":"634c77aabb268301b43cca26","name":"test","desc":"","descData":null,"closed":false,"idOrganization":"6146fc9521ede74ca314a55a","idEnterprise":null,"pinned":false,"url":"https://trello.com/b/9EMnGx8o/test","shortUrl":"https://trello.com/b/9EMnGx8o","prefs":{"permissionLevel":"private","hideVotes":false,"voting":"disabled","comments":"members","invitations":"members","selfJoin":true,"cardCovers":true,"isTemplate":false,"cardAging":"regular","calendarFeedEnabled":false,"hiddenPluginBoardButtons":[],"switcherViews":[{"_id":"634c77aabb268301b43cca27","viewType":"Board","enabled":true},{"_id":"634c77aabb268301b43cca28","viewType":"Table","enabled":true},{"_id":"634c77aabb268301b43cca29","viewType":"Calendar","enabled":false},{"_id":"634c77aabb268301b43cca2a","viewType":"Dashboard","enabled":false},{"_id":"634c77aabb268301b43cca2b","viewType":"Timeline","enabled":false},{"_id":"634c77aabb268301b43cca2c","viewType":"Map","enabled":false}],"background":"blue","backgroundColor":"#0079BF","backgroundImage":null,"backgroundImageScaled":null,"backgroundTile":false,"backgroundBrightness":"dark","backgroundBottomColor":"#0079BF","backgroundTopColor":"#0079BF","canBePublic":true,"canBeEnterprise":true,"canBeOrg":true,"canBePrivate":true,"canInvite":true},"labelNames":{"green":"","yellow":"","orange":"","red":"","purple":"","blue":"","sky":"","lime":"","pink":"","black":"","green_dark":"","yellow_dark":"","orange_dark":"","red_dark":"","purple_dark":"","blue_dark":"","sky_dark":"","lime_dark":"","pink_dark":"","black_dark":"","green_light":"","yellow_light":"","orange_light":"","red_light":"","purple_light":"","blue_light":"","sky_light":"","lime_light":"","pink_light":"","black_light":""},"limits":{}} 
  </msg>
-<msg timestamp="20221016 22:30:53.615" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221016 22:30:52.390" endtime="20221016 22:30:53.615"/>
+<msg timestamp="20221017 00:29:30.498" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221017 00:29:29.781" endtime="20221017 00:29:30.498"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${board_id}</var>
 <arg>${response.json()}</arg>
 <arg>id</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221016 22:30:53.618" level="INFO">${board_id} = 634c5bde19576c04dd8e2df5</msg>
-<status status="PASS" starttime="20221016 22:30:53.616" endtime="20221016 22:30:53.618"/>
+<msg timestamp="20221017 00:29:30.502" level="INFO">${board_id} = 634c77aabb268301b43cca26</msg>
+<status status="PASS" starttime="20221017 00:29:30.499" endtime="20221017 00:29:30.502"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${board_id}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221016 22:30:53.620" level="INFO">${board_id} = 634c5bde19576c04dd8e2df5</msg>
-<status status="PASS" starttime="20221016 22:30:53.619" endtime="20221016 22:30:53.620"/>
+<msg timestamp="20221017 00:29:30.504" level="INFO">${board_id} = 634c77aabb268301b43cca26</msg>
+<status status="PASS" starttime="20221017 00:29:30.503" endtime="20221017 00:29:30.504"/>
 </kw>
-<status status="PASS" starttime="20221016 22:30:52.383" endtime="20221016 22:30:53.621"/>
+<status status="PASS" starttime="20221017 00:29:29.775" endtime="20221017 00:29:30.505"/>
 </test>
 <test id="s1-t2" name="Creat Lİst" line="23">
 <kw name="Set Variable" library="BuiltIn">
 <var>${name}</var>
 <arg>eda</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<msg timestamp="20221016 22:30:53.625" level="INFO">${name} = eda</msg>
-<status status="PASS" starttime="20221016 22:30:53.625" endtime="20221016 22:30:53.625"/>
+<msg timestamp="20221017 00:29:30.509" level="INFO">${name} = eda</msg>
+<status status="PASS" starttime="20221017 00:29:30.509" endtime="20221017 00:29:30.509"/>
 </kw>
 <kw name="Create Dictionary" library="BuiltIn">
 <var>${request_body}</var>
@@ -68,8 +68,8 @@
 <arg>key=${key}</arg>
 <arg>token=${token}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221016 22:30:53.628" level="INFO">${request_body} = {'name': 'eda', 'idBoard': '634c5bde19576c04dd8e2df5', 'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
-<status status="PASS" starttime="20221016 22:30:53.626" endtime="20221016 22:30:53.628"/>
+<msg timestamp="20221017 00:29:30.512" level="INFO">${request_body} = {'name': 'eda', 'idBoard': '634c77aabb268301b43cca26', 'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
+<status status="PASS" starttime="20221017 00:29:30.510" endtime="20221017 00:29:30.512"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -77,34 +77,34 @@
 <arg>json=${request_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221016 22:30:54.122" level="INFO">POST Request : url=https://api.trello.com/1/lists?name=eda&amp;idBoard=634c5bde19576c04dd8e2df5&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
- path_url=/1/lists?name=eda&amp;idBoard=634c5bde19576c04dd8e2df5&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:31.111" level="INFO">POST Request : url=https://api.trello.com/1/lists?name=eda&amp;idBoard=634c77aabb268301b43cca26&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+ path_url=/1/lists?name=eda&amp;idBoard=634c77aabb268301b43cca26&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '174', 'Content-Type': 'application/json'} 
- body=b'{"name": "eda", "idBoard": "634c5bde19576c04dd8e2df5", "key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
+ body=b'{"name": "eda", "idBoard": "634c77aabb268301b43cca26", "key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
  </msg>
-<msg timestamp="20221016 22:30:54.123" level="INFO">POST Response : url=https://api.trello.com/1/lists?name=eda&amp;idBoard=634c5bde19576c04dd8e2df5&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:31.111" level="INFO">POST Response : url=https://api.trello.com/1/lists?name=eda&amp;idBoard=634c77aabb268301b43cca26&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  status=200, reason=OK 
- headers={'Date': 'Sun, 16 Oct 2022 19:30:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '121', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '98', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '298', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '372', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665948639210', 'X-Envoy-Upstream-Service-Time': '181', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '6544cfe9acd40cfd', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
- body={"id":"634c5bdfb4c9bf050dc37353","name":"eda","closed":false,"idBoard":"634c5bde19576c04dd8e2df5","pos":8192,"limits":{}} 
+ headers={'Date': 'Sun, 16 Oct 2022 21:29:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '121', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '98', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '298', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '372', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665955755050', 'X-Envoy-Upstream-Service-Time': '273', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '084908f35ef31dbf', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
+ body={"id":"634c77aa45326203f7a397b5","name":"eda","closed":false,"idBoard":"634c77aabb268301b43cca26","pos":8192,"limits":{}} 
  </msg>
-<msg timestamp="20221016 22:30:54.123" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221016 22:30:53.628" endtime="20221016 22:30:54.123"/>
+<msg timestamp="20221017 00:29:31.112" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221017 00:29:30.513" endtime="20221017 00:29:31.112"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${list_id}</var>
 <arg>${response.json()}</arg>
 <arg>id</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221016 22:30:54.126" level="INFO">${list_id} = 634c5bdfb4c9bf050dc37353</msg>
-<status status="PASS" starttime="20221016 22:30:54.123" endtime="20221016 22:30:54.126"/>
+<msg timestamp="20221017 00:29:31.114" level="INFO">${list_id} = 634c77aa45326203f7a397b5</msg>
+<status status="PASS" starttime="20221017 00:29:31.113" endtime="20221017 00:29:31.114"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${list_id}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221016 22:30:54.127" level="INFO">${list_id} = 634c5bdfb4c9bf050dc37353</msg>
-<status status="PASS" starttime="20221016 22:30:54.127" endtime="20221016 22:30:54.127"/>
+<msg timestamp="20221017 00:29:31.116" level="INFO">${list_id} = 634c77aa45326203f7a397b5</msg>
+<status status="PASS" starttime="20221017 00:29:31.115" endtime="20221017 00:29:31.116"/>
 </kw>
-<status status="PASS" starttime="20221016 22:30:53.624" endtime="20221016 22:30:54.128"/>
+<status status="PASS" starttime="20221017 00:29:30.507" endtime="20221017 00:29:31.116"/>
 </test>
 <test id="s1-t3" name="Creat Card" line="30">
 <kw name="Create Dictionary" library="BuiltIn">
@@ -113,8 +113,8 @@
 <arg>key=${key}</arg>
 <arg>token=${token}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221016 22:30:54.133" level="INFO">${request_body} = {'idList': '634c5bdfb4c9bf050dc37353', 'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
-<status status="PASS" starttime="20221016 22:30:54.132" endtime="20221016 22:30:54.133"/>
+<msg timestamp="20221017 00:29:31.121" level="INFO">${request_body} = {'idList': '634c77aa45326203f7a397b5', 'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
+<status status="PASS" starttime="20221017 00:29:31.120" endtime="20221017 00:29:31.121"/>
 </kw>
 <kw name="POST" library="RequestsLibrary">
 <var>${response}</var>
@@ -122,34 +122,34 @@
 <arg>json=${request_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a POST request.</doc>
-<msg timestamp="20221016 22:30:54.763" level="INFO">POST Request : url=https://api.trello.com/1/cards?idList=634c5bdfb4c9bf050dc37353&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
- path_url=/1/cards?idList=634c5bdfb4c9bf050dc37353&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:31.837" level="INFO">POST Request : url=https://api.trello.com/1/cards?idList=634c77aa45326203f7a397b5&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+ path_url=/1/cards?idList=634c77aa45326203f7a397b5&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '158', 'Content-Type': 'application/json'} 
- body=b'{"idList": "634c5bdfb4c9bf050dc37353", "key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
+ body=b'{"idList": "634c77aa45326203f7a397b5", "key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
  </msg>
-<msg timestamp="20221016 22:30:54.763" level="INFO">POST Response : url=https://api.trello.com/1/cards?idList=634c5bdfb4c9bf050dc37353&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:31.837" level="INFO">POST Response : url=https://api.trello.com/1/cards?idList=634c77aa45326203f7a397b5&amp;key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  status=200, reason=OK 
- headers={'Date': 'Sun, 16 Oct 2022 19:30:39 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1102', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '97', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '297', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '371', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665948639849', 'X-Envoy-Upstream-Service-Time': '316', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': 'b694c236c8e104d0', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
- body={"id":"634c5bdfbabe5b02edb68555","badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"checkItemStates":[],"closed":false,"dueComplete":false,"dateLastActivity":"2022-10-16T19:30:39.755Z","desc":"","descData":{"emoji":{}},"due":null,"dueReminder":null,"email":null,"idBoard":"634c5bde19576c04dd8e2df5","idChecklists":[],"idList":"634c5bdfb4c9bf050dc37353","idMembers":[],"idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"labels":[],"idLabels":[],"manualCoverAttachment":false,"name":"","pos":16384,"shortLink":"i2a2C0US","shortUrl":"https://trello.com/c/i2a2C0US","start":null,"subscribed":false,"url":"https://trello.com/c/i2a2C0US/1--","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"isTemplate":false,"cardRole":null,"attachments":[],"stickers":[],"limits":{}} 
+ headers={'Date': 'Sun, 16 Oct 2022 21:29:15 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1102', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '97', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '297', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '371', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665955755778', 'X-Envoy-Upstream-Service-Time': '368', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': 'cb43353d1c227243', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
+ body={"id":"634c77abbcfc6a0206f51121","badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"checkItemStates":[],"closed":false,"dueComplete":false,"dateLastActivity":"2022-10-16T21:29:15.646Z","desc":"","descData":{"emoji":{}},"due":null,"dueReminder":null,"email":null,"idBoard":"634c77aabb268301b43cca26","idChecklists":[],"idList":"634c77aa45326203f7a397b5","idMembers":[],"idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"labels":[],"idLabels":[],"manualCoverAttachment":false,"name":"","pos":16384,"shortLink":"cMnjmNVm","shortUrl":"https://trello.com/c/cMnjmNVm","start":null,"subscribed":false,"url":"https://trello.com/c/cMnjmNVm/1--","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"isTemplate":false,"cardRole":null,"attachments":[],"stickers":[],"limits":{}} 
  </msg>
-<msg timestamp="20221016 22:30:54.764" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221016 22:30:54.134" endtime="20221016 22:30:54.764"/>
+<msg timestamp="20221017 00:29:31.837" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221017 00:29:31.122" endtime="20221017 00:29:31.837"/>
 </kw>
 <kw name="Get From Dictionary" library="Collections">
 <var>${card_id}</var>
 <arg>${response.json()}</arg>
 <arg>id</arg>
 <doc>Returns a value from the given ``dictionary`` based on the given ``key``.</doc>
-<msg timestamp="20221016 22:30:54.767" level="INFO">${card_id} = 634c5bdfbabe5b02edb68555</msg>
-<status status="PASS" starttime="20221016 22:30:54.765" endtime="20221016 22:30:54.767"/>
+<msg timestamp="20221017 00:29:31.840" level="INFO">${card_id} = 634c77abbcfc6a0206f51121</msg>
+<status status="PASS" starttime="20221017 00:29:31.838" endtime="20221017 00:29:31.840"/>
 </kw>
 <kw name="Set Global Variable" library="BuiltIn">
 <arg>${card_id}</arg>
 <doc>Makes a variable available globally in all tests and suites.</doc>
-<msg timestamp="20221016 22:30:54.768" level="INFO">${card_id} = 634c5bdfbabe5b02edb68555</msg>
-<status status="PASS" starttime="20221016 22:30:54.767" endtime="20221016 22:30:54.768"/>
+<msg timestamp="20221017 00:29:31.842" level="INFO">${card_id} = 634c77abbcfc6a0206f51121</msg>
+<status status="PASS" starttime="20221017 00:29:31.841" endtime="20221017 00:29:31.842"/>
 </kw>
-<status status="PASS" starttime="20221016 22:30:54.131" endtime="20221016 22:30:54.769"/>
+<status status="PASS" starttime="20221017 00:29:31.118" endtime="20221017 00:29:31.843"/>
 </test>
 <test id="s1-t4" name="Update Card" line="36">
 <kw name="Create Dictionary" library="BuiltIn">
@@ -157,8 +157,8 @@
 <arg>key=${key}</arg>
 <arg>token=${token}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221016 22:30:54.774" level="INFO">${request_body} = {'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
-<status status="PASS" starttime="20221016 22:30:54.773" endtime="20221016 22:30:54.774"/>
+<msg timestamp="20221017 00:29:31.847" level="INFO">${request_body} = {'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
+<status status="PASS" starttime="20221017 00:29:31.846" endtime="20221017 00:29:31.847"/>
 </kw>
 <kw name="PUT" library="RequestsLibrary">
 <var>${response}</var>
@@ -166,20 +166,20 @@
 <arg>json=${request_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a PUT request.</doc>
-<msg timestamp="20221016 22:30:56.015" level="INFO">PUT Request : url=https://api.trello.com/1/cards/634c5bdfbabe5b02edb68555?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
- path_url=/1/cards/634c5bdfbabe5b02edb68555?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:32.348" level="INFO">PUT Request : url=https://api.trello.com/1/cards/634c77abbcfc6a0206f51121?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+ path_url=/1/cards/634c77abbcfc6a0206f51121?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '120', 'Content-Type': 'application/json'} 
  body=b'{"key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
  </msg>
-<msg timestamp="20221016 22:30:56.015" level="INFO">PUT Response : url=https://api.trello.com/1/cards/634c5bdfbabe5b02edb68555?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:32.348" level="INFO">PUT Response : url=https://api.trello.com/1/cards/634c77abbcfc6a0206f51121?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  status=200, reason=OK 
- headers={'Date': 'Sun, 16 Oct 2022 19:30:41 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1059', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '99', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '299', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '374', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665948641101', 'X-Envoy-Upstream-Service-Time': '147', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '7d8e857b7dbf26c8', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
- body={"id":"634c5bdfbabe5b02edb68555","badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"checkItemStates":[],"closed":false,"dueComplete":false,"dateLastActivity":"2022-10-16T19:30:39.755Z","desc":"","descData":{"emoji":{}},"due":null,"dueReminder":null,"email":null,"idBoard":"634c5bde19576c04dd8e2df5","idChecklists":[],"idList":"634c5bdfb4c9bf050dc37353","idMembers":[],"idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"labels":[],"idLabels":[],"manualCoverAttachment":false,"name":"","pos":16384,"shortLink":"i2a2C0US","shortUrl":"https://trello.com/c/i2a2C0US","start":null,"subscribed":false,"url":"https://trello.com/c/i2a2C0US/1--","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"isTemplate":false,"cardRole":null} 
+ headers={'Date': 'Sun, 16 Oct 2022 21:29:16 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '1059', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '96', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '296', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '370', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665955756288', 'X-Envoy-Upstream-Service-Time': '151', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '70ca3695c379be01', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
+ body={"id":"634c77abbcfc6a0206f51121","badges":{"attachmentsByType":{"trello":{"board":0,"card":0}},"location":false,"votes":0,"viewingMemberVoted":false,"subscribed":false,"fogbugz":"","checkItems":0,"checkItemsChecked":0,"checkItemsEarliestDue":null,"comments":0,"attachments":0,"description":false,"due":null,"dueComplete":false,"start":null},"checkItemStates":[],"closed":false,"dueComplete":false,"dateLastActivity":"2022-10-16T21:29:15.646Z","desc":"","descData":{"emoji":{}},"due":null,"dueReminder":null,"email":null,"idBoard":"634c77aabb268301b43cca26","idChecklists":[],"idList":"634c77aa45326203f7a397b5","idMembers":[],"idMembersVoted":[],"idShort":1,"idAttachmentCover":null,"labels":[],"idLabels":[],"manualCoverAttachment":false,"name":"","pos":16384,"shortLink":"cMnjmNVm","shortUrl":"https://trello.com/c/cMnjmNVm","start":null,"subscribed":false,"url":"https://trello.com/c/cMnjmNVm/1--","cover":{"idAttachment":null,"color":null,"idUploadedBackground":null,"size":"normal","brightness":"dark","idPlugin":null},"isTemplate":false,"cardRole":null} 
  </msg>
-<msg timestamp="20221016 22:30:56.016" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221016 22:30:54.775" endtime="20221016 22:30:56.016"/>
+<msg timestamp="20221017 00:29:32.349" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221017 00:29:31.848" endtime="20221017 00:29:32.349"/>
 </kw>
-<status status="PASS" starttime="20221016 22:30:54.771" endtime="20221016 22:30:56.017"/>
+<status status="PASS" starttime="20221017 00:29:31.845" endtime="20221017 00:29:32.350"/>
 </test>
 <test id="s1-t5" name="Delete Card" line="40">
 <kw name="Create Dictionary" library="BuiltIn">
@@ -187,8 +187,8 @@
 <arg>key=${key}</arg>
 <arg>token=${token}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221016 22:30:56.021" level="INFO">${request_body} = {'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
-<status status="PASS" starttime="20221016 22:30:56.021" endtime="20221016 22:30:56.022"/>
+<msg timestamp="20221017 00:29:32.355" level="INFO">${request_body} = {'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
+<status status="PASS" starttime="20221017 00:29:32.354" endtime="20221017 00:29:32.355"/>
 </kw>
 <kw name="DELETE" library="RequestsLibrary">
 <var>${response}</var>
@@ -196,20 +196,20 @@
 <arg>json=${request_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a DELETE request.</doc>
-<msg timestamp="20221016 22:30:56.644" level="INFO">DELETE Request : url=https://api.trello.com/1/cards/634c5bdfbabe5b02edb68555?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
- path_url=/1/cards/634c5bdfbabe5b02edb68555?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:32.981" level="INFO">DELETE Request : url=https://api.trello.com/1/cards/634c77abbcfc6a0206f51121?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+ path_url=/1/cards/634c77abbcfc6a0206f51121?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '120', 'Content-Type': 'application/json'} 
  body=b'{"key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
  </msg>
-<msg timestamp="20221016 22:30:56.644" level="INFO">DELETE Response : url=https://api.trello.com/1/cards/634c5bdfbabe5b02edb68555?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:32.981" level="INFO">DELETE Response : url=https://api.trello.com/1/cards/634c77abbcfc6a0206f51121?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  status=200, reason=OK 
- headers={'Date': 'Sun, 16 Oct 2022 19:30:41 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '13', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '98', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '298', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '373', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665948641729', 'X-Envoy-Upstream-Service-Time': '269', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '76ba90d83bc22186', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
+ headers={'Date': 'Sun, 16 Oct 2022 21:29:16 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '13', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '95', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '295', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '369', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665955756922', 'X-Envoy-Upstream-Service-Time': '285', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '2d3889919667750a', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
  body={"limits":{}} 
  </msg>
-<msg timestamp="20221016 22:30:56.644" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221016 22:30:56.023" endtime="20221016 22:30:56.645"/>
+<msg timestamp="20221017 00:29:32.982" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221017 00:29:32.355" endtime="20221017 00:29:32.982"/>
 </kw>
-<status status="PASS" starttime="20221016 22:30:56.019" endtime="20221016 22:30:56.645"/>
+<status status="PASS" starttime="20221017 00:29:32.352" endtime="20221017 00:29:32.983"/>
 </test>
 <test id="s1-t6" name="Delete Board" line="44">
 <kw name="Create Dictionary" library="BuiltIn">
@@ -217,8 +217,8 @@
 <arg>key=${key}</arg>
 <arg>token=${token}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<msg timestamp="20221016 22:30:56.650" level="INFO">${request_body} = {'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
-<status status="PASS" starttime="20221016 22:30:56.649" endtime="20221016 22:30:56.650"/>
+<msg timestamp="20221017 00:29:32.987" level="INFO">${request_body} = {'key': '74b61a3549d616fbb82c5cca0fa19a5b', 'token': '07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188'}</msg>
+<status status="PASS" starttime="20221017 00:29:32.986" endtime="20221017 00:29:32.987"/>
 </kw>
 <kw name="DELETE" library="RequestsLibrary">
 <var>${response}</var>
@@ -226,23 +226,23 @@
 <arg>json=${request_body}</arg>
 <arg>expected_status=200</arg>
 <doc>Sends a DELETE request.</doc>
-<msg timestamp="20221016 22:30:58.621" level="INFO">DELETE Request : url=https://api.trello.com/1/boards/634c5bde19576c04dd8e2df5?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
- path_url=/1/boards/634c5bde19576c04dd8e2df5?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:33.859" level="INFO">DELETE Request : url=https://api.trello.com/1/boards/634c77aabb268301b43cca26?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+ path_url=/1/boards/634c77aabb268301b43cca26?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  headers={'User-Agent': 'python-requests/2.28.1', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '120', 'Content-Type': 'application/json'} 
  body=b'{"key": "74b61a3549d616fbb82c5cca0fa19a5b", "token": "07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188"}' 
  </msg>
-<msg timestamp="20221016 22:30:58.621" level="INFO">DELETE Response : url=https://api.trello.com/1/boards/634c5bde19576c04dd8e2df5?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
+<msg timestamp="20221017 00:29:33.860" level="INFO">DELETE Response : url=https://api.trello.com/1/boards/634c77aabb268301b43cca26?key=74b61a3549d616fbb82c5cca0fa19a5b&amp;token=07fbcd41063c892c7d521b89c9e0614c9652534d4f8364b9a9ba9534e4941188 
  status=200, reason=OK 
- headers={'Date': 'Sun, 16 Oct 2022 19:30:42 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '16', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '97', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '297', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '372', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665948642600', 'X-Envoy-Upstream-Service-Time': '551', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': 'd9f476316e87a7ab', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
+ headers={'Date': 'Sun, 16 Oct 2022 21:29:17 GMT', 'Content-Type': 'application/json; charset=utf-8', 'Content-Length': '16', 'X-Dns-Prefetch-Control': 'off', 'X-Frame-Options': 'DENY', 'X-Download-Options': 'noopen', 'X-Permitted-Cross-Domain-Policies': 'none', 'Referrer-Policy': 'strict-origin-when-cross-origin', 'Surrogate-Control': 'no-store', 'Cache-Control': 'max-age=0, must-revalidate, no-cache, no-store', 'Pragma': 'no-cache', 'Expires': 'Thu, 01 Jan 1970 00:00:00', 'X-Trello-Version': '1.163849.0', 'X-Trello-Environment': 'Production (Micros)', 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'GET, PUT, POST, DELETE', 'Access-Control-Allow-Headers': 'Authorization, Accept, Content-Type', 'Access-Control-Expose-Headers': 'x-rate-limit-api-key-interval-ms, x-rate-limit-api-key-max, x-rate-limit-api-key-remaining, x-rate-limit-api-token-interval-ms, x-rate-limit-api-token-max, x-rate-limit-api-token-remaining', 'X-Rate-Limit-Db-Query-Time-Interval-Ms': '600000', 'X-Rate-Limit-Db-Query-Time-Max': '7200000', 'X-Rate-Limit-Db-Query-Time-Remaining': '7199990', 'X-Rate-Limit-Api-Token-Interval-Ms': '10000', 'X-Rate-Limit-Api-Token-Max': '100', 'X-Rate-Limit-Api-Token-Remaining': '94', 'X-Rate-Limit-Action-Interval-Ms': '3600000', 'X-Rate-Limit-Action-Max': '15000', 'X-Rate-Limit-Action-Remaining': '14999', 'X-Rate-Limit-Api-Key-Interval-Ms': '10000', 'X-Rate-Limit-Api-Key-Max': '300', 'X-Rate-Limit-Api-Key-Remaining': '294', 'X-Rate-Limit-Member-Interval-Ms': '10000', 'X-Rate-Limit-Member-Max': '375', 'X-Rate-Limit-Member-Remaining': '368', 'Set-Cookie': 'preAuthProps=s%3A6146f06563f5016174cc8fcc%3AisEnterpriseAdmin%3Dfalse.8mElE6mNv0klcZ6UkYUFDiu0eMuzPcg%2FUuSvJynnBX4; Path=/; HttpOnly', 'X-Server-Time': '1665955757800', 'X-Envoy-Upstream-Service-Time': '522', 'Server': 'globaledge-envoy', 'Expect-Ct': 'report-uri="https://web-security-reports.services.atlassian.com/expect-ct-report/trello-edge", max-age=86400', 'Strict-Transport-Security': 'max-age=63072000; preload', 'X-Content-Type-Options': 'nosniff', 'X-Xss-Protection': '1; mode=block', 'Atl-Traceid': '45753f1d3fba42b5', 'Report-To': '{"endpoints": [{"url": "https://dz8aopenkvv6s.cloudfront.net"}], "group": "endpoint-1", "include_subdomains": true, "max_age": 600}', 'Nel': '{"failure_fraction": 0.001, "include_subdomains": true, "max_age": 600, "report_to": "endpoint-1"}'} 
  body={"_value":null}
  
  </msg>
-<msg timestamp="20221016 22:30:58.622" level="INFO">${response} = &lt;Response [200]&gt;</msg>
-<status status="PASS" starttime="20221016 22:30:56.651" endtime="20221016 22:30:58.622"/>
+<msg timestamp="20221017 00:29:33.860" level="INFO">${response} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20221017 00:29:32.987" endtime="20221017 00:29:33.860"/>
 </kw>
-<status status="PASS" starttime="20221016 22:30:56.648" endtime="20221016 22:30:58.622"/>
+<status status="PASS" starttime="20221017 00:29:32.984" endtime="20221017 00:29:33.860"/>
 </test>
-<status status="PASS" starttime="20221016 22:30:51.668" endtime="20221016 22:30:58.626"/>
+<status status="PASS" starttime="20221017 00:29:28.941" endtime="20221017 00:29:33.864"/>
 </suite>
 <statistics>
 <total>
