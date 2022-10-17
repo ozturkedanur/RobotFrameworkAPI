@@ -1,0 +1,2 @@
+*** Variables ***
+${card_id}

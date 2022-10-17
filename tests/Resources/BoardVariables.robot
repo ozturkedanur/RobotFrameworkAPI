@@ -1,0 +1,2 @@
+*** Variables ***
+${board_id}

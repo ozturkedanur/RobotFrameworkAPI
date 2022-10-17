@@ -1,0 +1,2 @@
+*** Variables ***
+${list_id}
