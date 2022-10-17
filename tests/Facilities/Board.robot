@@ -6,7 +6,8 @@ Resource      ../Resources/BaseVariables.robot
 
 *** Keywords ***
 Creat Board
-        ${name}  Set Variable        test
+        [Arguments]  ${name}
+        #${name}  Set Variable        test
         ${request_body}      Create Dictionary       name=${name}    key=${key}    token=${token}
         ${response}    POST      url=${baseUrl}/boards/?name=${name}&key=${key}&token=${token}        json=${request_body}        expected_status=200
         #log  ${response.json()}
