@@ -10,7 +10,7 @@ Resource      ../Facilities/Card.robot
 Creat board
         Creat Board     TestBoard
 Creat list
-        List.Creat List     NewTestList
+        List.Creat List     NewTestList1
 Creat card
         Creat Card
 Update card
