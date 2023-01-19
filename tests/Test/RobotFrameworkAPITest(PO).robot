@@ -8,9 +8,9 @@ Resource      ../Facilities/Card.robot
 
 *** Test Cases ***
 Creat board
-        Creat Board     test
+        Creat Board     TestBoard
 Creat list
-        List.Creat List     newList
+        List.Creat List     NewTestList1
 Creat card
         Creat Card
 Update card
